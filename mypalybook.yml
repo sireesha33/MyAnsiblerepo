@@ -2,13 +2,13 @@
 - hosts : mywebserver
   become : yes 
   tasks   : 
-  - name: i want insatll java on ubuntu nodes
+  - name: i want insatll webserver on ubuntu nodes
     apt: 
-      name :  "{{javapackforubuntu}}"
+      name :  "{{mywebpackforubuntu}}"
       state : present 
     when : ansible_os_family=="Debian"
-  - name : i want install java and RedHat nodes
+  - name : i want install webserver and RedHat nodes
     yum : 
-      name : "{{myjavapackonredhat}}"
+      name : "{{mywebpackforredhat}}"
       state: present
     when : ansible_os_family == "RedHat"
