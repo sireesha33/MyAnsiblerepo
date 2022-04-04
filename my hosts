@@ -1,0 +1,24 @@
+[mywebserver]
+172.31.7.128
+172.31.4.231
+
+ [myapplicationserver]
+172.31.7.139
+172.31.4.321
+
+[mydbserver]
+172.31.7.543
+172.31.4.354
+
+[myubentuserver]
+172.31.7.128
+
+[myRedHatserver]
+172.31.4.231
+
+
+[mywebserver:vars]
+mywebpackforubuntu= apach2
+mywebpackforredhat=http
+javapackforubuntu = openjdk-8-jre
+myjavapackonredhat= java-1.8.0-openjdk
